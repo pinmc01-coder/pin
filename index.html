@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PINMC STORE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Minecraft", sans-serif;
+      background-color: #FFD700;
+      color: #000;
+      text-align: center;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav button {
+      background: #444;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav button.active {
+      background: yellow;
+      color: black;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .box {
+      background: #fff8d0;
+      border: 3px solid black;
+      margin: 10px auto;
+      width: 90%;
+      max-width: 500px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .order-btn {
+      display: inline-block;
+      background-image: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7b/Grass_Block_JE4_BE2.png');
+      background-size: cover;
+      color: #000;
+      padding: 8px 25px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #000;
+      color: #FFD700;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛍️ PINMC STORE 🛍️</h1>
+    <p>Halo selamat datang di PINMC STORE — Semoga pelayanan kami bisa membantu anda<br>
+    (pembayaran sudah QRIS Allpayment)</p>
+  </header>
+
+  <nav>
+    <button class="tab active" onclick="showPage('skin')">CUSTOM SKIN</button>
+    <button class="tab" onclick="showPage('topup')">TOP UP GAME</button>
+    <button class="tab" onclick="showPage('pp')">JASA PP PIXEL</button>
+    <button class="tab" onclick="showPage('thumb')">THUMBNAIL</button>
+  </nav>
+
+  <!-- CUSTOM SKIN -->
+  <div id="skin" class="content">
+    <h2>🎨 Custom Skin Minecraft</h2>
+    <div class="box">
+      🖌️ CUSTOM SKIN BEBAS REQ — 10K<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Order%20Custom%20Skin%20Bebas%20REQ" class="order-btn">ORDER</a>
+    </div>
+    <div class="box">
+      🖌️ CUSTOM SKIN COUPLE — 20K (BEBAS REQ)<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Order%20Custom%20Skin%20Couple" class="order-btn">ORDER</a>
+    </div>
+    <div class="box">
+      🖌️ CUSTOM SKIN LUCU — 5K<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Order%20Custom%20Skin%20Lucu" class="order-btn">ORDER</a>
+    </div>
+  </div>
+
+  <!-- TOP UP GAME -->
+  <div id="topup" class="content hidden">
+    <h2>🎮 Top Up Game Murah</h2>
+
+    <!-- FREE FIRE -->
+    <div class="box">
+      🕹 Free Fire<br>
+      💎5 = 1K<br>💎12 = 2K<br>💎70 = 10K<br>💎100 = 14K<br>💎140 = 19K<br>💎200 = 26K<br>💎300 = 38K<br>💎400 = 49K<br>💎500 = 60K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20Free%20Fire" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- BLOOD STRIKE -->
+    <div class="box">
+      🕹 Blood Strike<br>
+      🪙100 = 12K<br>🪙300 = 33K<br>🪙500 = 53K<br>🪙1.000 = 106K<br>🪙2.000 = 111K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20Blood%20Strike" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- MOBILE LEGENDS -->
+    <div class="box">
+      🕹 Mobile Legends<br>
+      💎19 = 6K<br>💎28 = 8K<br>💎44 = 13K<br>💎112 = 31K<br>💎222 = 58K<br>💎300 = 78K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20Mobile%20Legends" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- PUBG MOBILE -->
+    <div class="box">
+      🕹 PUBG MOBILE<br>
+      🪙60 = 15K<br>🪙300 = 73K<br>🪙600 = 142K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20PUBG%20Mobile" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- ROBLOX -->
+    <div class="box">
+      🕹 Roblox<br>
+      🪙100 = 85K<br>🪙200 = 105K<br>🪙400 = 115K<br>🪙800 = 160K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20Roblox" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- HIGGS DOMINO -->
+    <div class="box">
+      🕹 Higgs Domino<br>
+      🪙100m = 7K<br>🪙200m = 13K<br>🪙300m = 19K<br>🪙400m = 24K<br>🪙500m = 30K<br>🪙1b = 58K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20Higgs%20Domino" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- FC MOBILE -->
+    <div class="box">
+      🕹 FC Mobile<br>
+      🪙40 = 7K<br>🪙100 = 16K<br>🪙520 = 75K<br>🪙1.070 = 150K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20FC%20Mobile" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- HONOR OF KINGS -->
+    <div class="box">
+      🕹 Honor of Kings<br>
+      🎟16 = 3K<br>🎟80 = 15K<br>🎟240 = 43K<br>🎟400 = 71K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20Honor%20of%20Kings" class="order-btn">ORDER</a>
+    </div>
+
+    <!-- SUPER SUS -->
+    <div class="box">
+      🕹 Super Sus<br>
+      🪙100 = 11K<br>🪙310 = 32K<br>🪙520 = 53K<br>🪙1.060 = 107K<br>
+      Masih banyak menu lagi, tanya admin ya 🙏🏻<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Top%20Up%20Super%20Sus" class="order-btn">ORDER</a>
+    </div>
+  </div>
+
+  <!-- JASA PP PIXEL -->
+  <div id="pp" class="content hidden">
+    <h2>🖼️ Jasa PP Pixel</h2>
+    <div class="box">
+      16x16 = 5K<br>
+      32x32 = 10K<br>
+      64x64 = 15K<br>
+      128x128 = 25K<br>
+      256x256 = 35K<br>
+      512x512 = 50K<br>
+      1024x1024 = 70K<br>
+      2048x2048 = 100K<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Order%20PP%20Pixel" class="order-btn">ORDER</a>
+    </div>
+  </div>
+
+  <!-- THUMBNAIL -->
+  <div id="thumb" class="content hidden">
+    <h2>🎬 Jasa Thumbnail</h2>
+    <div class="box">
+      • YouTube<br>
+      • TikTok<br>
+      • Snack Video<br>
+      • Instagram<br>
+      • dan lainnya<br><br>
+      💰 Harga: 10K<br>
+      <a href="https://wa.me/6283825148871?text=Halo%20Saya%20Mau%20Order%20Thumbnail" class="order-btn">ORDER</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 PINMC STORE — All Rights Reserved
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(id).classList.remove('hidden');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+    </html>
